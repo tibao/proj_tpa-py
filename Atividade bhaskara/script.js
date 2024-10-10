@@ -5,8 +5,8 @@ document.getElementById('bhaskaraForm').addEventListener('submit', function (eve
     const b = parseFloat(document.getElementById('b').value);
     const c = parseFloat(document.getElementById('c').value);
 
-    if (isNaN(a) || isNaN(b) || isNaN(c) || a === 0) {
-        alert('Por favor, preencha corretamente os valores de A, B e C (A não pode ser zero).');
+    if (a == ''|| b == '' || c == '' || a == '') {
+        alert('Por favor preencha os campos');
         return;
     }
 
