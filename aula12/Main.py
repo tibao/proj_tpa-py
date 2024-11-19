@@ -1,5 +1,9 @@
-import Pessoa
-res = 0
+import Pessoa   
+import os
+def limpar(): os.system('clear')
+
+limpar()
+
 def pergunta():
     res = int(input("Deseja cadastrar uma nova pessoa? 1 - SIM ou 0 - NÃO: "))
     return res
@@ -21,4 +25,4 @@ def mostrar():
           .format("N°","Nome","Idade","Cargo","Salário"))
     for x in cadastro:
         print("{<4}{<10}{<7}{<10}{<7}".
-              format(x,x.nome,x.idade,x.cargo,x.salario))
+              format())
